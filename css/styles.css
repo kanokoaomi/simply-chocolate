@@ -1,0 +1,260 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #FFFFFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========== NAVIGATION =========== */
+
+.container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.03em;
+    color: #111111;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.logo-span {
+    font-style: italic;
+}
+
+.nav-div-logo {
+    width: 21px;
+    height: 21px;
+}
+
+.logo-icon {
+    fill: none;
+}
+
+.nav-button-menu {
+    border: none;
+    background-color: transparent;
+    /* display: block; */
+    line-height: 0;
+    padding: 0;
+    stroke: #111111;
+}
+
+
+/* ============== SECTION ONE - HERO =============== */
+
+.hero {
+    background-color: #1E1823;
+    border-radius: 30px;
+    margin-bottom: 54px;
+    background-image: 
+    url(../images/phone-img/background-image.jpg),
+    linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 395px;
+    max-width: 295px;
+    padding-bottom: 20px;
+}
+
+.hero .title {
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%; 
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+
+.hero .button-1 {
+    border-radius: 100px;
+    margin-right: 14px;
+    padding: 12px 28px;
+    border: none;
+    background-color: #FD9222;
+    color: #FFFFFF;
+}
+
+.hero .button-2 {
+    border-radius: 100px;
+    padding: 12px 28px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.button-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.hero-button-scroll-down {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.button-scroll-down {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    line-height: 0;
+    background-color: #FFFFFF;
+    fill: #FD9222;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============= SECTION TWO ============== */
+
+.benefits {
+    background-color: #1E1823;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.benefits-item .title {
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 18px;
+}
+
+.benefits-item .text {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+}
+
+.benefits-icon {
+    width: 62px;
+    height: 62px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 365px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+}
+
+/* ============= SCTION THREE - INGREDIENTS ============= */
+
+.ingredients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.ingredients .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #111111;
+    padding-bottom: 24px;
+}
+
+.ingredients-title-span {
+    color: #FD9222;
+}
+
+.ingredients .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    padding-bottom: 34px;
+}
+
+.ingredients-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ingredients-item-content {
+    padding: 28px 55px 25px 55px;
+}
+

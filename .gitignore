@@ -128,3 +128,35 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+
+.ingredients-item-orange .title,
+.ingredients-item-violet .title, 
+.ingredients-item-bordered .title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: start;
+    padding-left: 28px;
+    padding-bottom: 28px;
+}
+
+.ingredients-item-orange {
+    background-color: #FD9222;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.ingredients-item-violet {
+    background-color: #1E1823;
+    color: #FFFFFF;
+}
+
+.ingredients-list-bordered {
+    border: 1px solid #FD9222;
+    background-color: yellow;
+    color: #111111;
+    overflow: hidden;
+}
