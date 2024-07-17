@@ -258,3 +258,34 @@ img {
     padding: 28px 55px 25px 55px;
 }
 
+.ingredients-item {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid #FD9222;
+    color: #111111;
+}
+
+.ingredients-list .orange {
+    background-color: #FD9222;
+    color: #FFFFFF;
+    border: none;
+}
+
+.ingredients-list .dark-purple {
+    background-color: #1E1823;
+    color: #FFFFFF;
+    border: none;
+}
+
+.ingredients-item .title {
+    padding-bottom: 28px;
+    padding-left: 28px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: justify;
+    
+}
