@@ -93,7 +93,7 @@
 
         <section class="ingredients">
             <div class="container">
-                <h2 class="title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="ingredients-title-span">TASTE</span> SENSATION</h2>
+                <h2 class="title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="title-span">TASTE</span> SENSATION</h2>
                 <p class="text">
                     At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.
                 </p>
@@ -145,33 +145,62 @@
             </div>
         </section>
 
-        <section>
+        <section class="how-its-made-section">
             <div class="container">
-                <h2>HOW IT'S <span>MADE</span></h2>
-                <img src="./images/phone-img/how-its-made.jpg" alt="">
-                <div>
-                    <svg>
-                        <use href="./images/icons.svg#icon-play"></use>
-                    </svg>
+                <h2 class="title">HOW IT'S <span class="title-span">MADE</span></h2>
+                <div class="video">
+                    <img class="video-img" src="./images/phone-img/how-its-made.jpg" alt="video picture">
+                    <div class="video-pause-svg-container">
+                        <svg class="video-pause-svg" width="14" height="15">
+                            <use href="./images/icons.svg#icon-play"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p>Try  our chocolates today and discover the perfect balance of flavor</p>
-                <ul>
-                    <li>
-                        Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
-                    </li>
-                    <li>
-                        At the same time, prepare a water bath. Melt the butter on it.
-                    </li>
-                    <li>
-                        "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.
-                    </li>
-                    <li>
-                        Heat the mixture over low heat, letting it barely boil.
-                    </li>
-                    <li>
-                        Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.
-                    </li>
-                </ul>
+                <div class="try-chocolate-container">
+                    <p class="bold-text">Try our chocolates today and discover the perfect balance of flavor</p>
+                    <ul class="recept-of-chocolate">
+                        <li>
+                            Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
+                        </li>
+                        <li>
+                            At the same time, prepare a water bath. Melt the butter on it.
+                        </li>
+                        <li>
+                            "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass
+                            becomes uniform and silky.
+                        </li>
+                        <li>
+                            Heat the mixture over low heat, letting it barely boil.
+                        </li>
+                        <li>
+                            Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="comments">
+            <div class="container">
+                <h2 class="title"><span class="title-span">CHOCOLATE</span> IS LOVED</h2>
+                <div class="container-for-comment">
+                    <img width="80"
+                    class="clients-photo"
+                    srcset="./images/phone-img/photo@2x.png"
+                    src="./images/phone-img/photo.png" alt="client's photo">
+                    <div class="comment">
+                        <p class="clients-name">Victoria Dobrzhanska</p>
+                        <p class="text-comment">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+                    </div>
+                    <div class="scroll-bar">
+                        <ul>
+                            <li><span class="circles-scroll-bar"></span></li>
+                            <li><span class="circles-scroll-bar"></span></li>
+                            <li><span class="circles-scroll-bar"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="leave-a-review-btn">Leave a review</button>
             </div>
         </section>
     </main>
