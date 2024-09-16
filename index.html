@@ -34,7 +34,7 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content">
                     <h1 class="title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h1>
@@ -46,7 +46,7 @@
                         scroll down
                         <button type="button" class="button-scroll-down">
                             <svg width="10" height="6" class="icon-scroll-down">
-                                <use href="./images/icons.svg#icon-scroll-down"></use>
+                                <use class="icon-scroll-down-use" href="./images/icons.svg#icon-scroll-down"></use>
                             </svg>
                         </button>
                     </a>
@@ -54,7 +54,7 @@
             </div>
         </section>
 
-        <section class="benefits">
+        <section id="benefits" class="benefits">
             <div class="container">
                 <h2 class="visually-hidden">Benefits</h2>
                 <ul class="benefits-list">
@@ -91,7 +91,7 @@
             </div>
         </section>
 
-        <section class="ingredients">
+        <section id="ingredients" class="ingredients section-paddings">
             <div class="container">
                 <h2 class="title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="title-span">TASTE</span> SENSATION</h2>
                 <p class="text">
@@ -145,17 +145,23 @@
             </div>
         </section>
 
-        <section class="how-its-made-section">
+        <section id="howitsmade" class="how-its-made-section section-paddings">
             <div class="container">
                 <h2 class="title">HOW IT'S <span class="title-span">MADE</span></h2>
                 <div class="video">
-                    <img class="video-img" src="./images/phone-img/how-its-made.jpg" alt="video picture">
                     <div class="video-pause-svg-container">
                         <svg class="video-pause-svg" width="14" height="15">
                             <use href="./images/icons.svg#icon-play"></use>
                         </svg>
                     </div>
                 </div>
+                <!-- <div class="video-pic">
+                    <div class="button-video-play">
+                        <svg class="icon-video-play">
+                            <use href="./images/icons.svg#icon-play" width="14" height="15"></use>
+                        </svg>
+                    </div>
+                </div> -->
                 <div class="try-chocolate-container">
                     <p class="bold-text">Try our chocolates today and discover the perfect balance of flavor</p>
                     <ul class="recept-of-chocolate">
@@ -180,7 +186,7 @@
             </div>
         </section>
 
-        <section class="comments">
+        <section id="commentsection" class="comments section-paddings">
             <div class="container">
                 <h2 class="title"><span class="title-span">CHOCOLATE</span> IS LOVED</h2>
                 <div class="container-for-comment">
@@ -193,10 +199,10 @@
                         <p class="text-comment">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
                     </div>
                     <div class="scroll-bar">
-                        <ul>
-                            <li><span class="circles-scroll-bar"></span></li>
-                            <li><span class="circles-scroll-bar"></span></li>
-                            <li><span class="circles-scroll-bar"></span></li>
+                        <ul class="scroll-bar-list">
+                            <li class="circles-scroll-bar current-scroll-bar"></li>
+                            <li class="circles-scroll-bar"></li>
+                            <li class="circles-scroll-bar"></li>
                         </ul>
                     </div>
                 </div>
@@ -204,5 +210,33 @@
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h2 class="title"><span class="title-span">Chocolate</span> a delicious cure for a bad day</h2>
+            <div class="footer-address-container">
+                <p class="footer-contact-us-text">Contact us</p>
+                <address class="footer-address">
+                <a class="padding-four" href="+380684439426">+380 (68) 443-94-26</a>
+                <a href="simplychoc@gmail.com">simplychoc@gmail.com</a>
+                </address>
+            </div>
+
+            <ul class="ancher-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#howitsmade">How it's made?</a></li>
+                <li><a href="#ingredients">Our products</a></li>
+                <li><a href="#benefits">Top sellers</a></li>
+                <li><a href="#commentsection">Chocolate is loved</a></li>
+            </ul>
+
+            <form class="footer-subscribe-form">
+                <label for="input">
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                </label>
+                <button type="submit" class="footer-button">Subscribe</button>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
