@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Chocolate</title>
+    <link rel="icon" type="icon" href="./images/icons.svg#icon-chocolate-logo">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" >
@@ -12,9 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body">
     <header class="header">
-        <div class="container container-nav">
+        <div class="container-nav">
             <nav class="navigation">
                 <a href="" class="logo">
                     <p class="logo-text"><span class="logo-span">SIMPLY</span> CHOCOLATE</p>
@@ -40,6 +41,7 @@
                         <use href="./images/icons.svg#icon-menu-close"></use>
                     </svg>
                 </button>
+
                 <nav class="mobile-menu-navigation">
                     <ul class="mobile-menu-navigation-list">
                         <li class="mobile-menu-nav-list-item current-link"><a href="#home">Home</a></li>
@@ -50,14 +52,14 @@
 
                 <ul class="social-media">
                     <li class="social-media-list-item">
-                        <a href="https://www.instagram.com/">
+                        <a href="https://www.instagram.com/" target=”_blank”>
                             <svg width="22" height="22" class="menu-icon">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-media-list-item">
-                        <a href="https://x.com/">
+                        <a href="https://x.com/" target=”_blank”>
                             <svg width="22" height="22" class="menu-icon">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
@@ -74,8 +76,12 @@
                 <div class="hero-content">
                     <h1 class="title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h1>
                     <div class="button-div">
-                        <button type="button" class="button-1">Buy now</button>
-                        <button type="button" class="button-2">How it's made</button>
+                        <a href="#contact-us">
+                            <button type="button" class="button-1">Buy now</button>
+                        </a>
+                        <a href="#howitsmade">
+                            <button type="button" class="button-2">How it's made</button>
+                        </a>
                     </div>
                     <a href="" class="hero-button-scroll-down">
                         scroll down
@@ -134,6 +140,9 @@
                 </p>
                 <ul class="ingredients-list">
                     <li class="ingredients-item orange">
+                        <div class="overflow">
+                            
+                        </div>
                         <div class="ingredients-item-content">
                             <img width="224"
                             srcset="./images/phone-img/milk-chocolate@2x.png"
@@ -246,7 +255,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact-us">
         <div class="container">
             <h2 class="title"><span class="title-span">Chocolate</span> a delicious cure for a bad day</h2>
             <div class="footer-address-container">
@@ -268,12 +277,13 @@
             </nav>
 
             <form class="footer-subscribe-form">
-                <label for="input">
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                <label>
+                    <input  autocomplete="email" type="email" name="email" id="email" placeholder="Enter your email">
                 </label>
                 <button type="submit" class="footer-button">Subscribe</button>
             </form>
         </div>
     </footer>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
