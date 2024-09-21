@@ -1,25 +1,24 @@
-// OPEN AND CLOSE MOBILE MENU FUNCTIONS
+// // OPEN AND CLOSE MOBILE MENU FUNCTIONS
+// const burgerBtn = document.querySelector(".nav-button-menu");
+// const body = document.querySelector("#body");
+// const menuBackdrop = document.querySelector(".mobile-menu-backdrop");
 
-const burgerBtn = document.querySelector(".nav-button-menu");
-const body = document.querySelector("#body");
-const menuBackdrop = document.querySelector(".mobile-menu-backdrop");
+// function onBurgerBtnListener() {
+//   menuBackdrop.classList.add("is-open");
+//   body.classList.add("no-scroll");
+// }
 
-function onBurgerBtnListener() {
-  menuBackdrop.classList.add("is-open");
-  body.classList.add("no-scroll");
-}
+// burgerBtn.addEventListener("click", onBurgerBtnListener);
 
-burgerBtn.addEventListener("click", onBurgerBtnListener);
+// const closeMenubtn = document.querySelector(".menu-close-button");
 
-const closeMenubtn = document.querySelector(".menu-close-button");
+// function onCloseBtnListener() {
+//   menuBackdrop.classList.remove("is-open");
+//   body.classList.remove("no-scroll");
+// }
 
-function onCloseBtnListener() {
-  menuBackdrop.classList.remove("is-open");
-  body.classList.remove("no-scroll");
-}
+// closeMenubtn.addEventListener("click", onCloseBtnListener);
 
-closeMenubtn.addEventListener("click", onCloseBtnListener);
+// const menuNavigation = document.querySelector(".mobile-menu-navigation-list");
 
-const menuNavigation = document.querySelector(".mobile-menu-navigation-list");
-
-menuNavigation.addEventListener("click", onCloseBtnListener);
+// menuNavigation.addEventListener("click", onCloseBtnListener);

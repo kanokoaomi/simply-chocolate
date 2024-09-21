@@ -7,7 +7,9 @@
     <link rel="icon" type="icon" href="./images/icons.svg#icon-chocolate-logo">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css" >
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/laptop.css"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,14 +54,14 @@
 
                 <ul class="social-media">
                     <li class="social-media-list-item">
-                        <a href="https://www.instagram.com/" target=”_blank”>
+                        <a href="https://www.instagram.com/" target="_blank">
                             <svg width="22" height="22" class="menu-icon">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-media-list-item">
-                        <a href="https://x.com/" target=”_blank”>
+                        <a href="https://x.com/" target="_blank">
                             <svg width="22" height="22" class="menu-icon">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
@@ -72,6 +74,16 @@
 
     <main>
         <section id="home" class="hero">
+            <!-- <picture>
+                <source class="mans-picture" media="(min-width:1440px)" srcset="
+                        ./images/desktop-img 1x,
+                        /img/about-me/desktop@2x.jpg 2x" />
+                <source class="hero-picture" media="(min-width:768px)" srcset="
+                      ./images/tablet-img/background-img@1x.jpg 1x, 
+                      ./images/tablet-img/background-img@2x.jpg 2x" />
+                <img class=".hero-picture" srcset="./images/phone-img/background-image@2x.jpg" src="./images/phone-img/background-image.jpg"
+                    alt="Background picture of chocolate" />
+            </picture> -->
             <div class="container">
                 <div class="hero-content">
                     <h1 class="title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h1>
@@ -83,7 +95,7 @@
                             <button type="button" class="button-2">How it's made</button>
                         </a>
                     </div>
-                    <a href="" class="hero-button-scroll-down">
+                    <a href="#contact-us" class="hero-button-scroll-down">
                         scroll down
                         <button type="button" class="button-scroll-down">
                             <svg width="10" height="6" class="icon-scroll-down">
@@ -140,9 +152,6 @@
                 </p>
                 <ul class="ingredients-list">
                     <li class="ingredients-item orange">
-                        <div class="overflow">
-                            
-                        </div>
                         <div class="ingredients-item-content">
                             <img width="224"
                             srcset="./images/phone-img/milk-chocolate@2x.png"
@@ -150,7 +159,20 @@
                             alt="Picture of a milk chocolate"
                             >
                         </div>
-                        <h3 class="title">MILK CHOCOLATE</h3>
+                        <div class="overlay-container">
+                            <h3 class="title overlay-title">MILK CHOCOLATE</h3>
+                            <div class="overlay">
+                                <button class="ingredients-overlay-button-chocolate">chocolate</button>
+                                <button>the benefits</button>
+                                <p class="overlay-text">Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is
+                                    the
+                                    most consumed type of
+                                    chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although four-fifths
+                                    of
+                                    all
+                                    milk chocolate is sold in the United States and Europe.</p>
+                            </div>
+                        </div>
                     </li>
 
                     <li class="ingredients-item">
@@ -278,7 +300,7 @@
 
             <form class="footer-subscribe-form">
                 <label>
-                    <input  autocomplete="email" type="email" name="email" id="email" placeholder="Enter your email">
+                    <input autocomplete="email" type="email" name="email" id="email" placeholder="Enter your email">
                 </label>
                 <button type="submit" class="footer-button">Subscribe</button>
             </form>
